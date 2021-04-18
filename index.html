@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <nav id="main-navbar">TECHNOLOGY FOR SPECIAL NEEDS EDUCATION</nav>
+    <section id="introduction">
+        <div id="intro-heading">About The Project </div>
+        <div id="about-content"></div>
+    </section>
+    <section id="main-section">
+        <div id="speech-text-container">
+            <div id="speech-to-text">
+                <div id="speech-to-text-heading">Speech to text conversion</div>
+                <div id="microphone">
+                    <div id="mic-desc"></div>
+                    <div id="mic-button" onclick="toggleMic()">click to speak</div>
+                </div>
+                <div id="speech-result-box">
+                    <textarea name="" id="speech-result-text-area" cols="30" rows="10" readonly ></textarea>
+                </div>
+                <div id="speech-to-text-buttons">
+                    <div class="speech-text-button" id="copy-result-text" onclick="copyToClipboard()">Copy text</div>
+                </div>
+            </div>
+        </div>
+        <div id="text-speech-container">
+            <div id="text-to-speech">
+                <div id="text-to-speech-heading">Text to speech synthesis</div>
+                <div id="text-box-for-synthesis">
+                    <textarea name="" id="text-area-for-synthesis" cols="30" rows="10" ></textarea>
+                </div>
+                <div id="text-to-speech-buttons">
+                    <div class="text-speech-button" id="play-speech" onclick="playSpeech()">Play</div>
+                    <div class="text-speech-button" id="stop-speech" onclick="stopSpeech()">Stop</div>
+                    <div class="text-speech-button" id="pause-speech" onclick="pauseSpeech()">Pause</div>
+                    <div class="text-speech-button" id="resume-speech" onclick="resumeSpeech()">Resume</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="contributers">
+            <div id="contri-heading">Project Members</div>
+            <ul>
+                <li>Aman Deep (17MT10005)</li>
+                <li>DG Vinay (17MT3)</li>
+                <li>Gouri Ikhe (17MT10016)</li>
+                <li>Mohit Gupta (1MT)</li>
+            </ul>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="./public/js/speech-text.js"></script>
+    <script src="./public/js/text-speech.js"></script>
+</body>
+</html>
